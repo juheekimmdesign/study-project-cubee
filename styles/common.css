@@ -1,5 +1,51 @@
 /* common.css */
 @font-face {
     font-family:'DecaydenceStraight';
-    src:'../font/DecaydenceStraight.otf';
+    src: url('../font/DecaydenceStraight.otf');
 }
+/* ================================================================================================================ */
+#wrap {min-width: 1760px;}
+/* ----------------------------------------------------------- top_bnr */
+#wrap .top_bnr_swiper {}
+#wrap .top_bnr_swiper .top_bnr {}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper {}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide {text-align: center; background-color: #F5F8FF;}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide a:nth-child(1) {
+    font-size: 0.88rem; line-height: 32px; 
+}
+#wrap .top_bnr_swiper .top_bnr .close_btn {
+    position: absolute; right:20px; top:50%; transform: translateY(-50%); z-index: 10;
+}
+#wrap .top_bnr_swiper .top_bnr .close_btn img {}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .slide1 {}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .slide2 {}
+/* -------------------------------------------------------------- header  */
+#wrap header {
+    background-color:#fff;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    height: 80px; padding: 0 40px;
+    position: relative;
+}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {width: 100%;}
+#wrap header #gnb {
+    position: absolute; left: 50%; top:0; transform: translateX(-50%);
+}
+#wrap header #gnb .gnb_depth1 {
+    display: flex; flex-flow: row nowrap;
+    gap: 40px;
+}
+#wrap header #gnb .gnb_depth1 li {}
+#wrap header #gnb .gnb_depth1 li a {
+    display: block;
+    font-weight: 500; width: 100%;
+    line-height: 80px;
+}
+#wrap header #gnb .gnb_depth1 li:hover a{color: #1C4797;}
+#wrap header .lnb {
+    display: flex; flex-flow: row nowrap;
+    gap: 20px;}
+#wrap header .lnb a {display: block; width: 24px;}
+#wrap header .lnb a img {width: 100%;}

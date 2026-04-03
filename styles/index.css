@@ -1,49 +1,26 @@
 /* index.css */
-#wrap {min-width: 1760px;}
-/* ----------------------------------------------------------- top_bnr */
-#wrap .top_bnr_swiper {background-color: aqua;}
-#wrap .top_bnr_swiper .top_bnr {}
-#wrap .top_bnr_swiper .top_bnr .swiper-wrapper {}
-#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide {text-align: center;}
-#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide a:nth-child(1) {
-    font-size: 0.88rem; line-height: 32px; 
-}
-#wrap .top_bnr_swiper .top_bnr .close_btn {
-    position: absolute; right:20px; top:50%; transform: translateY(-50%);
-}
-#wrap .top_bnr_swiper .top_bnr .close_btn img {}
-#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .slide1 {}
-#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .slide2 {}
-/* -------------------------------------------------------------- header  */
-#wrap header {}
-#wrap header h1 {}
-#wrap header h1 a {}
-#wrap header h1 a img {}
-#wrap header .gnb {}
-#wrap header .gnb .gnb_depth1 {
-    display: flex; flex-flow: row nowrap;
-}
-#wrap header .gnb .gnb_depth1 li {}
-#wrap header .gnb .gnb_depth1 li a {
-    font-weight: 500; line-height: 80px;
-    background-color: aquamarine;
-}
-#wrap header .lnb {}
-#wrap header .lnb a {}
-#wrap header .lnb a img {}
 /* --------------------------------------------------------------- 1. hero banner */
 #wrap main {}
 #wrap main .hero_bnr {}
 #wrap main .hero_bnr .swiper {}
 #wrap main .hero_bnr .swiper .swiper-wrapper {}
-#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide {}
-#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide h1 {}
-#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .more_btn {}
-#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .more_btn img {}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide {height: 700px;}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .slide_txt{
+    padding: 0 260px; position: absolute; top: 35%;
+}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .slide_txt h1 {
+    font-size: 2.50rem; font-weight: 600; line-height: 1.2;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .slide_txt .more_btn {display: flex; align-items: center; gap: 8px;}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .slide_txt .more_btn span {color: #fff; font-size: 1.13rem;}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .slide_txt .more_btn img {}
 #wrap main .hero_bnr {}
 #wrap main .hero_bnr .hero .swiper-wrapper {}
-#wrap main .hero_bnr .hero .swiper-wrapper .slide1 {}
-#wrap main .hero_bnr .hero .swiper-wrapper .slide1 h1 {}
+#wrap main .hero_bnr .hero .swiper-wrapper .slide1 {background-image: url(../images/product/hero_bnr_01.jpg);}
+#wrap main .hero_bnr .hero .swiper-wrapper .slide2 {background-image: url(../images/product/hero_bnr_01.jpg);}
+#wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_01.jpg);}
 #wrap main .hero_bnr .hero .swiper-wrapper .slide1 .more_btn {}
 #wrap main .hero_bnr .hero .prev {}
 #wrap main .hero_bnr .hero .next {}
@@ -51,23 +28,83 @@
 #wrap main .hero_bnr .hero .page_scroll .page {}
 #wrap main .hero_bnr .hero .page_scroll .scroll {}
 /* ---------------------------------------------------------- 2.artist */
-#wrap .container {}
-#wrap .container .contents {}
-#wrap .container .contents .title {}
-#wrap .container .contents .title p {}
-#wrap .container .contents .title h1 {}
-#wrap .container .contents .more_btn {}
-#wrap .container .contents .more_btn a {}
-#wrap .container .contents .more_btn a .btn_txt {}
-#wrap .container .contents .more_btn a  img {}
-#wrap .artist {}
-#wrap .artist .artist_left {}
-#wrap .artist .artist_left .title {}
-#wrap .artist .artist_left .title p {}
-#wrap .artist .artist_left .title h1 {}
-#wrap .artist .artist_left .more_btn {}
-#wrap .artist .artist_left .more_btn a {}
-#wrap .artist .artist_left .more_btn a .btn_txt {}
-#wrap .artist .artist_left .more_btn a img {}
-#wrap .artist .artist_right {}
-#wrap .artist .artist_right a {}
+#wrap main .container {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; gap: 80px;
+}
+#wrap main .container .contents {}
+#wrap main .container .contents .title {}
+#wrap main .container .contents .title p {font-weight: 500; color: #aaa;}
+#wrap main .container .contents .title h1 {font-family: 'DecaydenceStraight'; font-size: 1.50rem; margin-bottom: 20px;}
+#wrap main .container .contents .more_btn {}
+#wrap main .container .contents .more_btn a {}
+#wrap main .container .contents .more_btn a .btn_txt {}
+#wrap main .container .contents .more_btn a  img {}
+#wrap main .artist {padding: 80px 80px 160px;}
+#wrap main .artist .artist_left {
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+#wrap main .artist .artist_left .title {}
+#wrap main .artist .artist_left .title p {}
+#wrap main .artist .artist_left .title h1 {}
+#wrap main .artist .artist_left .more_btn {}
+#wrap main .artist .artist_left .more_btn a {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; 
+    height: 64px; width: 380px; padding: 10px; border-bottom: 1px solid #1e1e1e;
+}
+#wrap main .artist .artist_left .more_btn a .btn_txt {}
+#wrap main .artist .artist_left .more_btn a img {}
+#wrap main .artist .artist_right {display: flex; flex-flow: row nowrap;  gap: 20px;}
+#wrap main .artist .artist_right a {}
+#wrap main .artist .artist_right a img {width: 100%;}
+/* -------------------------------------------------- 3. add bnr 1st */
+#wrap main .add_bnr_product {
+    height: 200px;
+    background-image: url(../images/product/add_bnr_01.jpg);
+    position: relative;
+}
+#wrap main .add_bnr_product .add_contents {
+    display: block;
+    position: absolute; left: 200px; top: 50%; transform: translateY(-50%);
+}
+#wrap main .add_bnr_product .add_contents h1 {color: #fff; font-size: 2.50rem; margin-bottom: 10px; font-weight: 600;}
+#wrap main .add_bnr_product .add_contents .more_btn {
+    display: flex; flex-flow: row nowrap; align-items: center; gap: 8px;
+}
+#wrap main .add_bnr_product .add_contents .more_btn img {}
+#wrap main .add_bnr_product .add_contents .more_btn p {color: #fff; font-size: 1.50rem;}
+/* ---------------------------------------------------4.best */
+#wrap main .best {padding: 160px 0 160px 80px;}
+#wrap main .best .best_left {display: flex; flex-flow: column nowrap; justify-content: space-between;}
+#wrap main .best .best_left .title {}
+#wrap main .best .best_left .title h1 {}
+#wrap main .best .best_left .title h1 p {}
+#wrap main .best .best_left .tab_manu {}
+#wrap main .best .best_left .tab_manu li {}
+#wrap main .best .best_left .tab_manu li a {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; 
+    height: 64px; width: 380px; padding: 10px; border-bottom: 1px solid #f9f9f9; 
+}
+#wrap main .best .best_left .tab_manu li a .txt {color: #aaa;}
+#wrap main .best .best_left .tab_manu li a img {}
+#wrap main .best .best_right {width: calc(100% - 380px);}
+#wrap main .best .best_right .best_swiper {width: 100%;}
+#wrap main .best .best_right .best_swiper .swiper-wrapper {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide {background-color: aqua;}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img .rank {
+    background-color: #1e1e1e; color: #fff;
+    width: 40px; height: 40px; text-align: center; line-height: 40px;
+    position: absolute; font-size: 1.13em;
+}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img .rank {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img .like {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img .like img {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info h1 {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info h1 .price {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info h1 .bedge {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info h1 .bedge span {}
