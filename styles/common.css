@@ -6,7 +6,7 @@
 /* ================================================================================================================ */
 #wrap {min-width: 1760px;}
 /* ----------------------------------------------------------- top_bnr */
-#wrap .top_bnr_swiper {}
+#wrap .top_bnr_swiper {width: 100%;}
 #wrap .top_bnr_swiper .top_bnr {}
 #wrap .top_bnr_swiper .top_bnr .swiper-wrapper {}
 #wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide {text-align: center; background-color: #F5F8FF;}
@@ -26,6 +26,7 @@
     justify-content: space-between; align-items: center;
     height: 80px; padding: 0 40px;
     position: relative;
+    width: 100%;
 }
 #wrap header h1 {}
 #wrap header h1 a {}
