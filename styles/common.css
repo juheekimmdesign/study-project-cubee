@@ -34,7 +34,8 @@
 #wrap header h1 a img {width: 100%;}
 /* ==================================================================== gnb 메뉴 시작 */
 #wrap header #gnb {
-    position: absolute; left: 50%; top:0; transform: translateX(-50%);
+    position: absolute; left: 50%; top:0;
+    transform: translateX(-50%);
     width: 100%;
 }
 #wrap header #gnb .gnb_depth1 {

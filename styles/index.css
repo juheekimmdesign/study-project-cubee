@@ -54,12 +54,12 @@
     flex-flow: row nowrap;
     align-items: center;
     gap: 8px;
-    z-index: 10;s
+    z-index: 10;
 }
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current,
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {font-weight: 600; font-size: 0.88rem;}
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1);}
-#wrap main .hero_bnr .hero .page_scroll .page span:nth-child(2) {display: inline-block; background-color: rgba(255,255,255,0.6); width: 1px; height: 8px;}
+#wrap main .hero_bnr .hero .page_scroll .page span:nth-child(2) {display: inline-block; background:#aaa; width: 1px; height: 8px;}
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.6);}
 #wrap main .hero_bnr .hero .page_scroll .scroll {
     position: relative !important;
@@ -69,6 +69,7 @@
     flex: 1;
     height: 2px;
     z-index: 10;
+    background: rgba(255,255,255,0.3);
 }
 #wrap main .hero_bnr .hero .page_scroll .scroll .swiper-scrollbar {
     flex: 1;
@@ -79,7 +80,7 @@
     height: 2px;
     z-index: 10;
 }
-#wrap main .hero_bnr .hero .page_scroll .scroll .swiper-scrollbar .swiper-scrollbar-drag {background: rgba(255,255,255,1);}
+#wrap main .hero_bnr .hero .page_scroll .scroll .swiper-scrollbar-drag {background: rgba(255,255,255,1);}
 
 /* ---------------------------------------------------------- 2.artist */
 #wrap main .artist {
@@ -100,6 +101,8 @@
     padding: 10px; border-bottom: 1px solid #1e1e1e;
 }
 #wrap main .artist .artist_left .more_btn a .btn_txt {}
+#wrap main .artist .artist_left .more_btn:hover a {padding: 10px; border-bottom: 1px solid #1C4797;}
+#wrap main .artist .artist_left .more_btn:hover a .btn_txt {color: #1C4797;}
 #wrap main .artist .artist_left .more_btn a img {}
 #wrap main .artist .artist_right {
     display: flex; flex-flow: row nowrap; gap: 20px;
@@ -221,12 +224,53 @@
 #wrap main .coming_container .coming_right .coming_wrap .next {right: -16px; transform: scale(-1);}
 #wrap main .coming_container .coming_right .coming_wrap .prev svg,
 #wrap main .coming_container .coming_right .coming_wrap .next svg {display: none;}
-#wrap main .coming_container .coming_right .coming_wrap .page_scroll {position: relative;}
-#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page {font-size: 0.88rem;}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: auto !important;
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-current,
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-total {font-weight: 600; font-size: 0.88rem;}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-current {color: #1C4797;}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page span:nth-child(2) {display: inline-block; background:#aaa; width: 1px; height: 8px;}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-total {color: #aaa;}
-#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page span:nth-child(2) {display: inline-block; background-color: #eee; width: 1px; height: 8px;}
-#wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll {width: 400px; height: 1px; background: #eee; bottom: -80px;}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: auto !important;
+    flex: 1;
+    height: 2px;
+    z-index: 10;
+}#wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll .swiper-scrollbar{
+    flex: 1;
+    position: relative !important;  /* Swiper가 absolute로 강제하는 것 방지 */
+    bottom: auto !important;
+    left: auto !important;
+    width: auto !important;
+    height: 2px;
+    z-index: 10;
+    background: #aaa;
+}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll .swiper-scrollbar-drag {background: #1C4797;}
 #wrap main .coming_container .coming_right .noti_btn {
     display: flex; flex-flow: column nowrap; align-items: center; gap: 24px;
@@ -303,17 +347,45 @@
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info h1 {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info .price {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info .price del {color: #555; font-size: 0.75rem;}
-#wrap main .new_container .contents .new_wrap .page_scroll {}
+#wrap main .new_container .contents .new_wrap .page_scroll {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+}
 #wrap main .new_container .contents .new_wrap .page_scroll .page {
-    display: flex; flex-flow: row nowrap; align-items: center; gap: 8px; width: 50px;
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: auto !important;
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
 }
 #wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-current,
 #wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-total {font-weight: 600; font-size: 0.88rem;}
 #wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1);}
 #wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.6);}
 #wrap main .new_container .contents .new_wrap .page_scroll .page span:nth-child(2) {display: inline-block; background-color: rgba(255,255,255,0.6); width: 1px; height: 8px;}
-#wrap main .new_container .contents .new_wrap .page_scroll .scroll {width: 600px; height: 1px; background: rgba(255,255,255,0.3);}
-#wrap main .new_container .contents .new_wrap .page_scroll .scroll .swiper-scrollbar-drag {background: rgba(255,255,255,1); width: 200px;}
+#wrap main .new_container .contents .new_wrap .page_scroll .scroll {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: auto !important;
+    flex: 1;
+    height: 2px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.3);}
+#wrap main .new_container .contents .new_wrap .page_scroll .scroll .swiper-scrollbar-drag {background: rgba(255,255,255,1);}
 /* -------------------------------------------------------------------------------- 7.product */
 #wrap main .product {
     display: flex; flex-flow: row nowrap;
