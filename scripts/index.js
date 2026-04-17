@@ -101,7 +101,7 @@ function bestSwiperHide(){
 
 
 // bestTab 마우스 올렸을때 나갔을 때 이벤트
-/* for(let i of bestTab){
+for(let i of bestTab){
     console.log(i);
     i.addEventListener('mouseover', function(){
         console.log('마우스올린확인');
@@ -116,7 +116,7 @@ function bestSwiperHide(){
         i.children[0].children[1].style.display = 'none';
     })
     
-} */
+}
 
 //artist 더보기Btn에 마우스 올렸을때 + 나갔을때 이벤트 설정 
 artistMoreBtn.addEventListener('mouseover', function(){
