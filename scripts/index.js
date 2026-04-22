@@ -12,7 +12,8 @@ const mdpick = document.querySelector('.mdpick_right .mdpick_swiper');
 const artistSelect = document.querySelectorAll('.artist_right a img');//artist 상품분류탭(아티스트별) 선택변수
 const artistMoreBtn = document.querySelector('.artist_left .more_btn');//artist 더보기탭 선택변수
 const notiBtn = document.querySelector('.noti_btn .more_btn');//new 오픈알림받기탭 선택변수
-const bestTab = document.querySelectorAll('.best_left .contents_wrap .tab_menu li');//best 상품분류탭(아티스트별) 선택변수
+const bestTab = document.querySelectorAll('.best_left .contents_wrap .tab_menu li > a');//best 상품분류탭(아티스트별) 선택변수
+const bestSwiper = document.querySelector('.best_swiper .swiper-wrapper .swiper-slide');
 const productTab = document.querySelectorAll('.product_left .contents_wrap .tab_menu > li');//product 상품분류탭(아이템종류별) 선택변수
 const productMoreTab = document.querySelector('.product_left .more_btn');//product 더보기탭 선택변수
 const mdTab = document.querySelectorAll('.mdpick_left .tab_menu li');//mdpick 상품분류탭(아티스트별) 선택변수
@@ -22,7 +23,7 @@ console.log( heroBnr, bestIdle, bestNowz, bestLightsum, best,coming, newslide, m
 console.log('------------------------------------------');
 console.log( artistSelect[0],artistSelect[1],artistSelect[2], artistMoreBtn, notiBtn);
 console.log('------------------------------------------');
-console.log(bestTab, productTab, productMoreTab, mdTab);
+console.log(bestTab, productTab, productMoreTab, mdTab, bestSwiper);
 
 //mbpPcik 더보기Tab 버튼 마우스 올렸을때, 나갔을 때 이벤트
 mdMoreTab.addEventListener('mouseover', function(){
@@ -82,12 +83,21 @@ for(let i of productTab){
     })
 }
 
-for(let i of bestTab){
-    console.log(i);
-    i.addEventListener('click', function(){
-        console.log('클릭확인');
+
+//best tab
+// 1. tab을 클릭하면 모든 best swiper 사라지기
+// 2. 클릭한 탭의 활성화 고정되고
+// 3. 같은 index 번호를 가진 swiper만 나오기. 
+
+for(let tab of bestTab){
+    console.log();
+    tab.addEventListener('click', function(e){
+        e.preventDefault();
+        // console.log('클릭확인');
+        //탭을 클릭했을때 모든 swiper 사라지기
         bestSwiperHide();
-        i.cildren[0].style.display='block'
+        //클릭한 탭과 같은 인덱스번호를 가진 스와이퍼 나오기
+
     })
     
 }
@@ -96,8 +106,6 @@ function bestSwiperHide(){
 }
 
 
-// best[0].style.display = 'none'
-
 
 
 // bestTab 마우스 올렸을때 나갔을 때 이벤트
@@ -105,15 +113,15 @@ for(let i of bestTab){
     console.log(i);
     i.addEventListener('mouseover', function(){
         console.log('마우스올린확인');
-        i.children[0].children[0].style.color = '#1c4797';
-        i.children[0].style.borderBottom ='1px solid #1c4797';
-        i.children[0].children[1].style.display = 'block';
+        i.children[0].style.color = '#1c4797';
+        i.style.borderBottom ='1px solid #1c4797';
+        i.children[1].style.display = 'block';
     })
     i.addEventListener('mouseout', function(){
         if (i.classList.contains('active')) return;
-        i.children[0].children[0].style.color = '#aaa';
-        i.children[0].style.borderBottom ='1px solid #f9f9f9';
-        i.children[0].children[1].style.display = 'none';
+        i.children[0].style.color = '#aaa';
+        i.style.borderBottom ='1px solid #f9f9f9';
+        i.children[1].style.display = 'none';
     })
     
 }
