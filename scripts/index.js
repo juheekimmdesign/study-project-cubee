@@ -175,12 +175,6 @@ artistSelect[2].addEventListener('mouseout',function(){
 });
 
 
-// 1.모두 숨기기
-
-
-
-
-
 // best 상품 목록 swiper생성
 const bestIdleSwiper = new Swiper(bestIdle, {
     slidesPerView: 4,
