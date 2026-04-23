@@ -218,7 +218,7 @@ const heroBnrSwiper = new Swiper(heroBnr, {
         renderFraction:function(current, total){
             console.log(current, total);
             let customPage = `<span class=${current}></span>`;
-            customPage += `<span>|</span>`;
+            customPage += `<span></span>`;
             customPage += `<span class=${total}></span>`;
             return customPage;
         },

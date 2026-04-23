@@ -49,7 +49,7 @@
 #wrap main .hero_bnr .hero .page_scroll .page {
     display: flex; width: max-content;
     bottom: auto; left: auto; top: auto; right: 0;
-    gap: 8px;
+    gap: 8px; align-items: center;
 }
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1); font-size: 0.88rem; font-weight: 600;}
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.3); font-size: 0.88rem; font-weight: 600;}
