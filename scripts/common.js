@@ -85,7 +85,24 @@ console.log(gnbClone);
 
 mNav.appendChild(gnbClone);//자식 붙여넣기
 
-//햄버거 메뉴버튼(.m_nav)를 눌렀을 때, gnb 나오고 들어가기
+//햄버거 메뉴버튼(.m_nav)를 눌렀을 때 gnb 메뉴 나오기
+const mNavBtn = document.querySelector('.m_nav .m_menu');
+const mGnbBg = document.querySelector('.m_gnb .gnb_bg')
+console.log(mNavBtn);
+mNavBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('햄버거클릭확인')
+    mNav.style.display = 'block';
+})
+mGnbBg.addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('mgnbbg를 클릭확인')
+    mNav.style.display = 'none';
+})
+//gnbBG를 눌렀을 때, gnb 메뉴 사라지기
+
+
+//m_nav 햄버거버튼 클릭시 gnb메뉴 보이기 안보이기
 
 
 // m_nav 메뉴 클릭했을 때,
@@ -93,14 +110,17 @@ const mNavDep1 = mNav.querySelectorAll('.gnb_depth1 > li > a');
 const mNavDep2 = mNav.querySelectorAll('.depth2_container .depth2_wrap')
 console.log(mNavDep1, mNavDep2);
 for(let tab of mNavDep1){
+    //gnb의 메뉴를 클릭했을 때,
     tab.addEventListener('click', function(e){
         e.preventDefault();
         console.log('m의 tab메뉴를 클릭하다..');
+        //2번째 하위메뉴를 모두 숨긴다
         mNavDep2Hide()
         console.log(tab.dataset.index);
         const gnbIndex = tab.dataset.index;
+        //gnbdepth1의 인덱스번호와 gnbdepth2의 Nodelist 번호가 같으면 보이기
         mNavDep2[gnbIndex].style.display='flex'
-        //클릭한 탭 활성화
+        //탭을 클릭하면 모든 active가 사라지고 클릭한 탭에만 active들어가서 스타일이 활성화
         for(let dep1 of mNavDep1){dep1.classList.remove('active')};
         mNavDep1[gnbIndex].classList.add('active')
     })

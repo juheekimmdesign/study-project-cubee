@@ -98,10 +98,10 @@ Any resemblance to real-world commercial sites is purely for design practice.
 /* ==================================================================== m_nav :: tablet & movile용 gnb메뉴 복제 스타일 */
 #wrap header .lnb_mnav {}
 #wrap header .lnb_mnav .lnb {}
-#wrap header .lnb_mnav .m_nav {}
-#wrap header .lnb_mnav .m_nav .m_gnb {}
-#wrap header .lnb_mnav .m_nav .m_gnb .m_menu {}
-#wrap header .lnb_mnav .m_nav .m_gnb .m_menu img {}
+#wrap header .lnb_mnav .m_nav {width: 24px; height: 24px;}
+#wrap header .lnb_mnav .m_nav .m_menu {width: 100%;}
+#wrap header .lnb_mnav .m_nav .m_menu img {width: 100%;}
+#wrap header .lnb_mnav .m_nav .m_gnb {display: none;}
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 {
     position: absolute; 
     top: 120px; left: 40px;
