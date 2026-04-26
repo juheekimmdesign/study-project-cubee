@@ -100,8 +100,8 @@ const tmGnb = document.querySelector('.tm_nav .tm_gnb');
 
 console.log(tmMenuBtn, tmGnbBg, tmCloseBtn);
 
-// 햄버거 버튼 클릭 - 패널 + 딤처리 열기
-// ================================ 햄버거 버튼 클릭 - 패널 + 딤처리 열기
+// 햄버거 버튼 클릭
+// ================================ 햄버거 버튼 클릭
 tmMenuBtn.addEventListener('click', function(e) {
     e.preventDefault();
     tmNavlist.style.display = 'flex';
@@ -114,7 +114,7 @@ tmCloseBtn.addEventListener('click', function(e) {
     tmNavClose();
 });
 
-// ================================ 딤처리 클릭시 닫기
+// ================================ 배경 클릭시 닫기
 tmGnbBg.addEventListener('click', function() {
     tmNavClose();
 });

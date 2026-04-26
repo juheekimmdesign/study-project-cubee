@@ -2,8 +2,8 @@
 /*----------------------------------------------------------------  공통 */
 
 /* --------------------------------------------------------------- 1. hero banner */
-#wrap main {width: 100%;}
-#wrap main .hero_bnr {width: 100%; }
+#wrap main {width: 100vw;}
+#wrap main .hero_bnr {width: 100vw;}
 #wrap main .hero_bnr .hero {height: 80vh; position: relative;}
 #wrap main .hero_bnr .hero .swiper-wrapper {}
 #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover}
@@ -53,10 +53,11 @@
 }
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1); font-size: 0.88rem; font-weight: 600;}
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.3); font-size: 0.88rem; font-weight: 600;}
-#wrap main .hero_bnr .hero .page_scroll .page span:nth-child(2) {display: inline-block; background-color: #aaa; width: 1px; height: 10px;}
+#wrap main .hero_bnr .hero .page_scroll .page span:nth-child(2) {display: inline-block; background-color: #eee; width: 1px; height: 10px;}
 /* ---------------------------------------------------------- 2.artist */
 #wrap main .artist {
-    max-width: 1760px; margin: 80px auto 160px;
+    width: calc(100vw - 160px);
+    margin: 80px auto;
 }
 #wrap main .artist .artist_left {
     display: flex; flex-flow: column nowrap;
@@ -69,17 +70,17 @@
 #wrap main .artist .artist_left .more_btn a {
     display: flex; flex-flow: row nowrap; 
     align-items: center; justify-content: space-between; 
-    height: 64px; width: 100%;
+    height: 64px; width: 380px;
     padding: 10px; border-bottom: 1px solid #1e1e1e;
 }
 #wrap main .artist .artist_left .more_btn a .btn_txt {}
 #wrap main .artist .artist_left .more_btn a img {}
 #wrap main .artist .artist_right {
     display: flex; flex-flow: row nowrap; gap: 20px;
-    width: 100%; flex: 1;
+    max-width: calc(100vw - 540px);
 }
 #wrap main .artist .artist_right a {}
-#wrap main .artist .artist_right a img {flex: 1;}
+#wrap main .artist .artist_right a img {width: 100%;}
 
 /* -------------------------------------------------- 3. add bnr 1st */
 #wrap main .add_bnr_product {
