@@ -1,7 +1,7 @@
 /* responsive.css */
 /* tablet size mediaquary :: 1024 이하일때 */
 /* 태블릿 1024px 이하 */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px){
     /* =====================================================================================================1. herobnr */
     #wrap main .hero_bnr .hero {height: 810px;}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{top:80%; left: 50%; transform: translateX(-50%);}
@@ -16,7 +16,7 @@
     #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px){
     #wrap header .header_right .lnb {display: none;}
     #wrap header .header_right .tm_menu {display: block;}
     #wrap header .header_right .tm_nav {
@@ -35,7 +35,6 @@
         display: none;
     }
     /* ==================================================================== 태블릿 모바일 gnb, lnb */
-
     #wrap header .header_right .tm_nav .tm_nav_top {
         display: flex; flex-flow: row nowrap;
         justify-content: space-between; align-items: center;
@@ -91,16 +90,12 @@
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt img {}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a p {font-size: 0.69rem; color: #fff;}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr .bnr_img {width:100%}
-
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
-    
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px){
     #wrap header #gnb {display: none;}
     #wrap header .header_right .lnb {display: none;}
-    
-
     /* 태블릿  header 아래 드롭다운 */
     #wrap header .header_right .tm_nav .tm_nav_top {}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 {display: flex; flex-flow: column nowrap;}
@@ -110,7 +105,8 @@
     #wrap main .hero_bnr .hero .page_scroll .scroll {width: 50vw;}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-repeat: no-repeat;background-position: center;}
 
-    
+    /* ---------------------------------------------------------------- 3. add_bnr */
+    #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
 }
 
 @media screen and (max-width:800px){
@@ -118,7 +114,7 @@
     #wrap main .artist {flex-flow: column nowrap; height: auto; justify-content: center; align-items: center;}
     #wrap main .artist .artist_left {}
     #wrap main .artist .artist_left .title {text-align: center;}
-    
+    #wrap main .artist .artist_left .more_btn a {}
     #wrap main .artist .artist_left .more_btn a .btn_txt {}
     #wrap main .artist .artist_left .more_btn a img {}
     #wrap main .artist .artist_right {
@@ -127,7 +123,6 @@
     }
     #wrap main .artist .artist_right a {}
     #wrap main .artist .artist_right a img {width: 100%;}
-
 }
 
 
