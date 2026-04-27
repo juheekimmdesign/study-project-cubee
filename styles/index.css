@@ -27,8 +27,8 @@
 #wrap main .hero_bnr .hero .next {color:#fff; background-image: url(../images/common/prev_next.svg);
     background-size: contain; background-repeat: no-repeat;
 }
-#wrap main .hero_bnr .hero .prev {position: absolute; top: 50%; left: 160px; transform: translateY(-50%) scale(0.6);}
-#wrap main .hero_bnr .hero .next {position: absolute; top: 50%; right: 160px; transform: translateY(-50%) scale(-0.6);}
+#wrap main .hero_bnr .hero .prev {position: absolute; top: 60%; left: 160px; transform: translateY(-60%) scale(0.6);}
+#wrap main .hero_bnr .hero .next {position: absolute; top: 60%; right: 160px; transform: translateY(-60%) scale(-0.6);}
 #wrap main .hero_bnr .hero .prev svg {display: none;}
 #wrap main .hero_bnr .hero .next svg {display: none;}
 #wrap main .hero_bnr .hero .page_scroll {
@@ -70,7 +70,7 @@
 #wrap main .artist .artist_left .more_btn a {
     display: flex; flex-flow: row nowrap; 
     align-items: center; justify-content: space-between; 
-    height: 64px; width: 380px;
+    height: 64px; width: 100%;
     padding: 10px; border-bottom: 1px solid #1e1e1e;
 }
 #wrap main .artist .artist_left .more_btn a .btn_txt {}
