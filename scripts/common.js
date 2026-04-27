@@ -143,8 +143,8 @@ for (let li of tmGnbLi) {
             tmDepth2Hide();
             li.classList.add('open');
             dep2.style.height = `${dep2.scrollHeight}px`;
-        }
-    });
+        }  
+    })
 }
 
 function tmDepth2Hide() {

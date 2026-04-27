@@ -194,7 +194,15 @@ Any resemblance to real-world commercial sites is purely for design practice.
     display: flex; align-items: center; justify-content: center;
     width: 48px; height: 48px;
     background: rgba(255,255,255,0.8);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
     
 }
-.floating_cta a img {width: 24px; height: 24px;}
+.floating_cta .cta_history {background-image:  url(../images/common/history.svg);}
+.floating_cta .cta_chat {background-image: url(../images/common/chat.svg);}
+.floating_cta .page_up {background-image: url(../images/product/product_more.svg);}
+.floating_cta .cta_chat:hover {background-image: url(../images/common/chat_on.svg);}
+.floating_cta .cta_history:hover {background-image:  url(../images/common/history_on.svg);}
+.floating_cta .page_up:hover {background-image: url(../images/common/page_up_acive.svg);}
 .floating_cta span {height: 1px; width: 100%; background: #eee; }
