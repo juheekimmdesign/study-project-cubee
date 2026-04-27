@@ -129,6 +129,8 @@ function tmNavClose() {
 const tmGnbLi = document.querySelectorAll('.tm_nav .tm_gnb .gnb_depth1 > li');
 const tmDepth2 = document.querySelectorAll('.tm_nav .tm_gnb .depth2_container');
 
+for(let i of tmDepth2){i.style.transition = 'height 0.3s'}
+
 for (let li of tmGnbLi) {
     li.addEventListener('click', function() {
         const dep2 = li.querySelector('.depth2_container');

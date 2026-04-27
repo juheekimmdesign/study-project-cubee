@@ -1,6 +1,21 @@
 /* responsive.css */
 /* tablet size mediaquary :: 1024 이하일때 */
 /* 태블릿 1024px 이하 */
+@media screen and (max-width: 1400px) {
+    /* =====================================================================================================1. herobnr */
+    #wrap main .hero_bnr .hero {height: 810px;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{top:80%; left: 50%; transform: translateX(-50%);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {text-align: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 br {display: none;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt .more_btn {justify-content: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-position: center; background-repeat: no-repeat;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide1 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide2 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .prev {top: 60%; left: 60px; transform: translateY(-60%) scale(0.6);}
+    #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
+}
+
 @media screen and (max-width: 1200px) {
     #wrap header .header_right .lnb {display: none;}
     #wrap header .header_right .tm_menu {display: block;}
@@ -20,7 +35,7 @@
         display: none;
     }
     /* ==================================================================== 태블릿 모바일 gnb, lnb */
-  
+
     #wrap header .header_right .tm_nav .tm_nav_top {
         display: flex; flex-flow: row nowrap;
         justify-content: space-between; align-items: center;
@@ -33,7 +48,7 @@
     }
     #wrap header .header_right .tm_nav .tm_nav_top .tm_lnb .lnb a {display: block; width: 24px;}
     #wrap header .header_right .tm_nav .tm_nav_top .tm_lnb  .lnb a img {width: 100%;}
-      #wrap header .header_right .tm_nav .tm_nav_top .gnb_close_btn {text-align: right; }
+    #wrap header .header_right .tm_nav .tm_nav_top .gnb_close_btn {text-align: right; }
     #wrap header .header_right .tm_nav .tm_nav_top .gnb_close_btn a {display: inline-block; width: 32px; height: 32px;}
     #wrap header .header_right .tm_nav .tm_nav_top .gnb_close_btn a img {width: 100%;}
     /* tablet & mobile용 gnb 복제 스타일 */
@@ -41,15 +56,15 @@
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 {
         display: flex; flex-flow: column nowrap; width: 100%; gap: 20px;
     }
-    #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li:nth-child(1) .depth2_container {display: none;}
+    #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li:nth-child(1) .depth2_container {}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li {}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > a {display: block; padding: 20px 0; border-bottom: 1px solid #eee;}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .active {color: #1c4797;border-bottom: 1px solid #1c4797; }
         #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .active > a {}
-    #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container {} 
+    #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container {height: 0; overflow: hidden;} 
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap {
         display: flex; flex-flow: column nowrap;
-        justify-content: space-between;
+        justify-content: space-between; 
     }
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 {display: flex; flex-flow: column nowrap; margin-left: 20px;}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li {}
@@ -76,6 +91,8 @@
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt img {}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a p {font-size: 0.69rem; color: #fff;}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr .bnr_img {width:100%}
+
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
 }
 
 @media screen and (max-width: 1024px) {
@@ -84,34 +101,35 @@
     
 
     /* 태블릿  header 아래 드롭다운 */
-    #wrap header .header_right .tm_nav .tm_nav_top {
-    }
-    #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 {
-        display: flex; flex-flow: column nowrap;
-        
-    }
-    #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > a {
-        display: block;
-        font-weight: 500;
-    }
-    #wrap header .header_right .tm_nav .tm_nav_top .gnb_close_btn {
-        top: 20px; right: 40px;
-    }
-    /* =====================================================================================================1. herobnr */
-    #wrap main .hero_bnr .hero {height: 810px;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{max-width: 1024px; top: 84%;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {text-align: center;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 br {display: none;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt .more_btn {justify-content: center;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover}
-    #wrap main .hero_bnr .hero .swiper-wrapper .slide1 {background-image: url(../images/product/hero_bnr_t.jpg);}
-    #wrap main .hero_bnr .hero .swiper-wrapper .slide2 {background-image: url(../images/product/hero_bnr_t.jpg);}
-    #wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_t.jpg);}
-    #wrap main .hero_bnr .hero .prev {top: 60%; left: 60px; transform: translateY(-60%) scale(0.6);}
-    #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
+    #wrap header .header_right .tm_nav .tm_nav_top {}
+    #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 {display: flex; flex-flow: column nowrap;}
+    #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > a {display: block;font-weight: 500;}
+    #wrap header .header_right .tm_nav .tm_nav_top .gnb_close_btn {top: 20px; right: 40px;}
+    #wrap main .hero_bnr .hero .page_scroll{width: 60vw;}
+    #wrap main .hero_bnr .hero .page_scroll .scroll {width: 50vw;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-repeat: no-repeat;background-position: center;}
 }
 
 /* 모바일 580px 이하 */
 @media screen and (max-width: 580px) {
-    
+    /* =====================================================================================================1. herobnr */
+    #wrap main .hero_bnr .hero {height: 80vh; width: 100vw;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{max-width: 580px; top: 84%;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {text-align: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 br {display: block;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt .more_btn {justify-content: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-repeat: no-repeat;background-position: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide {background-image: url(../images/product/hero_bnr_m.jpg);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide2 {background-image: url(../images/product/hero_bnr_m.jpg);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_m.jpg);}
+    #wrap main .hero_bnr .hero .prev {top: 60%; left: 60px; transform: translateY(-60%) scale(0.6);}
+    #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
+
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{top:75%;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {font-size: 1.50rem;}
+}
+
+@media screen and (max-width: 440px) {
+    #wrap main {max-width: 440px;}
+    #wrap header .header_right .tm_nav {min-width: 300px;}
 }
