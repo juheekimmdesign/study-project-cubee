@@ -239,7 +239,7 @@ const bestIdleSwiper = new Swiper(bestIdle, {
     breakpoints:{
         1400:{slidesPerView: 4,},
         1024:{slidesPerView: 2.5,},
-        0:{slidesPerView: 2,},
+        0:{slidesPerView: 2, spaceBetween: 10,},
     },
 })
 const bestNowzSwiper = new Swiper(bestNowz, {
@@ -255,7 +255,7 @@ const bestNowzSwiper = new Swiper(bestNowz, {
     breakpoints:{
         1400:{slidesPerView: 4,},
         1024:{slidesPerView: 2.5,},
-        0:{slidesPerView: 2,},
+        0:{slidesPerView: 2,spaceBetween: 10,},
     },
 })
 const bestLightsumSwiper = new Swiper(bestLightsum, {
@@ -271,7 +271,7 @@ const bestLightsumSwiper = new Swiper(bestLightsum, {
     breakpoints:{
         1400:{slidesPerView: 4,},
         1024:{slidesPerView: 2.5,},
-        0:{slidesPerView: 2,},
+        0:{slidesPerView: 2, spaceBetween: 10,},
     },
 })
 
@@ -352,6 +352,11 @@ const newSwiper = new Swiper(newslide, {
     },
     scrollbar:{
         el:'.new_wrap .scroll'
+    },
+    breakpoints:{
+        1400:{slidesPerView: 4, spaceBetween: 20,},
+        1024:{slidesPerView: 2, spaceBetween: 20,},
+        0:{slidesPerView: 2, spaceBetween: 10,},
     },
 })
 

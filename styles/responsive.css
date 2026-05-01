@@ -85,11 +85,14 @@
     width: 100%; height: 100%; gap: 120px; 
     align-items: center; 
     }
+    
     #wrap main .coming_container .coming_left {
-    height: 70vh; width: 100vw; background-image: url(../images/product/come_all_item_t.jpg);
-    background-repeat: no-repeat; background-size: cover; background-position: center; flex: auto;
+        height: 70vh; width: 100vw; background-image: url(../images/product/come_all_item_t.jpg);
+        background-repeat: no-repeat; background-size: cover; background-position: center; flex: auto;
     }
     #wrap main .coming_container .coming_right {gap: 40px; width: 90vw;}
+    /* -------------------------------------------------------------------------------------------------------------8.add_bnr_pay */
+
 }
 
 /* 반응형 1200이하 일 때, ============================================== */
@@ -127,7 +130,12 @@
     #wrap main .add_bnr_product .add_contents {left: 60px;}
     #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
     #wrap main .add_bnr_product .add_contents .more_btn p {font-size: 1.25rem;}
-    
+    /* ------------------------------------------------------------------------------------------------------------------------- 7.product */
+    #wrap main .product .product_right .product_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
     
 }
 /* 반응형 1024이하 일 때, ============================================== */
@@ -190,9 +198,25 @@
     #wrap main .coming_container .coming_right .coming_wrap .page_scroll {width: 50vw;}
     #wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll {width: 44vw;}
     #wrap main .coming_container .coming_right .noti_btn .more_btn a {width: 260px;}
-    #wrap main .coming_container .coming_right .noti_btn .more_btn a .btn_txt {font-size: 0.88rem; }
+    #wrap main .coming_container .coming_right .noti_btn .more_btn a .btn_txt {font-size: 0.88rem;}
+    /* ---------------------------------------------------------------------------------------------------------------------------------- 6. new */
+    #wrap main .new_container {padding: 80px 30px 160px;}
+    #wrap main .new_container .contents .new_wrap .page_scroll {width: 50vw;}
+    #wrap main .new_container .contents .new_wrap .page_scroll .scroll {width: 44vw;}
+    /* ------------------------------------------------------------------------------------------------------------------------- 7.product */
+    #wrap main .product {flex-flow: column nowrap; padding: 80px 30px;}
+    #wrap main .product .product_left .contents_wrap {gap: 0; width: 100%;}
+    #wrap main .product .product_left .contents_wrap .title {text-align: center;}
+    #wrap main .product .product_left .contents_wrap .tab_menu {display: flex; flex-flow: row nowrap; width: 100%;}
+    #wrap main .product .product_left .contents_wrap .tab_menu li {width: 100%;}
+    #wrap main .product .product_left .contents_wrap .tab_menu li a {justify-content: center;}
+    #wrap main .product .product_left .tab_menu li a img {display: none;}
+    #wrap main .product .product_left .contents_wrap .tab_menu li .active img {display: none;}
+    #wrap main .product .contents_more {align-items: center; gap: 40px;}
+    #wrap main .product .contents_more .contents_wrap {flex: auto; align-items: center;}
+    #wrap main .product .contents_more .more_btn {display: none;}
 }
-/* 반응형 800p이하 일 때, ============================================== */
+/* 반응형 800px이하 일 때, ============================================== */
 @media screen and (max-width:800px){
     /* ---------------------------------------------------------------------------------------------------------------------1. herobnr */
     #wrap main .hero_bnr .hero {height: 80vh; width: 100vw;}
@@ -215,6 +239,9 @@
     #wrap main .coming_container .coming_right .coming_wrap {width: 80vw;}
     #wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll {width: 40vw;}
     #wrap main .coming_container .coming_right .noti_btn > p {font-size: 0.75rem;}
+    /* ---------------------------------------------------------------------------------------------------------------------------------- 6. new */
+    #wrap main .new_container {padding: 80px 15px;}
+    #wrap main .new_container .contents .new_wrap .page_scroll .scroll {width: 40vw;}
 }
 
 

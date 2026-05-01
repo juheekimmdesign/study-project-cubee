@@ -243,10 +243,10 @@
 #wrap main .coming_container .coming_right .noti_btn .more_btn a .btn_txt img {}
 /* ----------------------------------------------------------6. new */
 #wrap main .new_container {
-    width: 100%;
+    width: 100%; 
     background-color: #1e1e1e; padding: 120px 80px;
 }
-#wrap main .new_container .contents {}
+#wrap main .new_container .contents {flex: auto; width: 100%;}
 #wrap main .new_container .contents .title {
     display: flex; flex-flow: row nowrap;
     align-items: end; justify-content: space-between;
@@ -255,9 +255,11 @@
 #wrap main .new_container .contents .title .title_left {}
 #wrap main .new_container .contents .title .title_left h1 {color: #fff;}
 #wrap main .new_container .contents .title .title_left p {}
-#wrap main .new_container .contents .add_btn {}
+#wrap main .new_container .contents .add_btn:hover img {animation: add 1s ease}
+@keyframes add {0% {rotate:0;} 100% {rotate:360deg;}}
+
 #wrap main .new_container .contents .add_btn img {}
-#wrap main .new_container .contents .new_wrap {position: relative; max-width: 1760px; margin-bottom: 160px;}
+#wrap main .new_container .contents .new_wrap {position: relative; margin-bottom: 160px ; max-width: 1760px; width: 100%; margin: 0 auto;}
 #wrap main .new_container .contents .new_wrap .new_swiper {margin-bottom: 40px;}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide {}
