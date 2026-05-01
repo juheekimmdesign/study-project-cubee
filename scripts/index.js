@@ -370,6 +370,12 @@ const mdpickSwiperIdle = new Swiper(mdpickIdle, {
         delay:2000,
         pauseOnMouseEnter: true,
     },
+    //반응형 옵션 break points(사용자의 디바이스 너비 기준)
+    breakpoints:{
+        1400:{slidesPerView: 4,},
+        1024:{slidesPerView: 2.5,},
+        0:{slidesPerView: 2, spaceBetween: 10,},
+    },
 })
 const mdpickSwiperNowz = new Swiper(mdpickNowz, {
     loop:true,
@@ -380,6 +386,12 @@ const mdpickSwiperNowz = new Swiper(mdpickNowz, {
         delay:2000,
         pauseOnMouseEnter: true,
     },
+    //반응형 옵션 break points(사용자의 디바이스 너비 기준)
+    breakpoints:{
+        1400:{slidesPerView: 4,},
+        1024:{slidesPerView: 2.5,},
+        0:{slidesPerView: 2, spaceBetween: 10,},
+    },
 })
 const mdpickSwiperLightsum = new Swiper(mdpickLightsum, {
     loop:true,
@@ -389,5 +401,11 @@ const mdpickSwiperLightsum = new Swiper(mdpickLightsum, {
     autoplay:{
         delay:2000,
         pauseOnMouseEnter: true,
+    },
+    //반응형 옵션 break points(사용자의 디바이스 너비 기준)
+    breakpoints:{
+        1400:{slidesPerView: 4,},
+        1024:{slidesPerView: 2.5,},
+        0:{slidesPerView: 2, spaceBetween: 10,},
     },
 })
