@@ -237,15 +237,9 @@ const bestIdleSwiper = new Swiper(bestIdle, {
     },
     //반응형 옵션 break points(사용자의 디바이스 너비 기준)
     breakpoints:{
-        1200:{
-            slidesPerView: 4,
-        },
-        800:{
-            slidesPerView: 2.5,
-        },
-        0:{
-            slidesPerView: 2,
-        },
+        1400:{slidesPerView: 4,},
+        1024:{slidesPerView: 2.5,},
+        0:{slidesPerView: 2,},
     },
 })
 const bestNowzSwiper = new Swiper(bestNowz, {
@@ -259,15 +253,9 @@ const bestNowzSwiper = new Swiper(bestNowz, {
     },
     //반응형 옵션 break points(사용자의 디바이스 너비 기준)
     breakpoints:{
-        1200:{
-            slidesPerView: 4,
-        },
-        800:{
-            slidesPerView: 2.5,
-        },
-        0:{
-            slidesPerView: 2,
-        },
+        1400:{slidesPerView: 4,},
+        1024:{slidesPerView: 2.5,},
+        0:{slidesPerView: 2,},
     },
 })
 const bestLightsumSwiper = new Swiper(bestLightsum, {
@@ -281,15 +269,9 @@ const bestLightsumSwiper = new Swiper(bestLightsum, {
     },
     //반응형 옵션 break points(사용자의 디바이스 너비 기준)
     breakpoints:{
-        1200:{
-            slidesPerView: 4,
-        },
-        800:{
-            slidesPerView: 2.5,
-        },
-        0:{
-            slidesPerView: 2,
-        },
+        1400:{slidesPerView: 4,},
+        1024:{slidesPerView: 2.5,},
+        0:{slidesPerView: 2,},
     },
 })
 
@@ -341,6 +323,11 @@ const comingSwiper = new Swiper(coming, {
     },
     scrollbar:{
         el:'.coming_wrap .scroll'
+    },
+    breakpoints:{
+        1200:{slidesPerView:2},
+        800:{slidesPerView:2},
+        0:{slidesPerView:1},
     },
 })
 const newSwiper = new Swiper(newslide, {

@@ -156,14 +156,16 @@
     width: 100%; margin: 0 80px 160px 0; height: 940px; gap: 40px;
     justify-content: start;
 }
-#wrap main .coming_container .coming_left {height: 100%; width: 940px; background: yellow;}
+#wrap main .coming_container .coming_left {
+    background-image: url(../images/product/come_all_item.jpg); flex: 1;
+    background-repeat: no-repeat; background-size: cover; background-position: center;
+}
 #wrap main .coming_container .coming_left img {width: 100%; height: 100%;}
 #wrap main .coming_container .coming_right {
     display: flex; flex-flow: column nowrap;
     justify-content: center;
     align-items: center; gap: 80px;
     width: 860px;
-
 }
 #wrap main .coming_container .coming_right .title {text-align: center;}
 #wrap main .coming_container .coming_right .title h1 {}
@@ -199,8 +201,8 @@
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info .badge span:last-child {}
 #wrap main .coming_container .coming_right .coming_wrap .prev,
 #wrap main .coming_container .coming_right .coming_wrap .next {position: absolute; top: 40%; background-image: url(../images/common/prev_next_b.svg);}
-#wrap main .coming_container .coming_right .coming_wrap .prev {left: -16px;}
-#wrap main .coming_container .coming_right .coming_wrap .next {right: -16px; transform: scale(-1);}
+#wrap main .coming_container .coming_right .coming_wrap .prev {left: 16px;}
+#wrap main .coming_container .coming_right .coming_wrap .next {right: 16px; transform: scale(-1);}
 #wrap main .coming_container .coming_right .coming_wrap .prev svg,
 #wrap main .coming_container .coming_right .coming_wrap .next svg {display: none;}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll {
@@ -228,7 +230,7 @@
 }
 #wrap main .coming_container .coming_right .noti_btn > p {
     display: inline-block; background-color: #F5F8FF; padding: 4px;
-    font-size: 0.88rem; color: #555;
+    font-size: 0.88rem; color: #555; width: 100%; text-align: center;
 }
 #wrap main .coming_container .coming_right .noti_btn .more_btn {}
 #wrap main .coming_container .coming_right .noti_btn .more_btn a {
