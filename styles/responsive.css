@@ -72,10 +72,12 @@
     /* ---------------------------------------------------------------- 3. add_bnr */
     #wrap main .add_bnr_product {
         background-size: cover; background-position: right;
+        
     }
     #wrap main .add_bnr_product .add_contents {left: 60px;}
+    #wrap main .add_bnr_product .add_contents h1 {font-size: 2rem;}
     /* ---------------------------------------------------4.best */
-    #wrap main .container .contents {flex: 0 0 210px;}
+    #wrap main .container .contents {flex: 0 0 320px;}
     #wrap main .container .contents .contents_wrap {flex:0 0 320px;}
 }
 
@@ -105,10 +107,15 @@
     #wrap main .container {gap: 40px;}
     /* ---------------------------------------------------------------- 3. add_bnr */
     #wrap main .add_bnr_product {
+        background-image: url(../images/product/add_bnr_01_t.jpg);
+        background-size: cover;
+    }
+    #wrap main .add_bnr_product {
         background-size: cover; background-position: right;
     }
     #wrap main .add_bnr_product .add_contents {left: 60px;}
     #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
+    #wrap main .add_bnr_product .add_contents .more_btn p {font-size: 1.25rem;}
     
 }
 
@@ -125,9 +132,11 @@
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-repeat: no-repeat;background-position: center;}
     
     /* ==================================================================== 공통 tab_manu 디자인 */
-    #wrap main .container .contents .contents_wrap .tab_menu li a {
-    width: 100%;
-}
+        #wrap main .container .contents {flex: 1; width: 100%;}
+    #wrap main .container .contents .contents_wrap .tab_menu li a {width: 100%; font-size: 0.88rem;}
+    #wrap main .container .contents .contents_wrap .tab_menu li:hover a img {display: none;}
+    #wrap main .container .contents .contents_wrap .tab_menu li a img {display: none;}
+    #wrap main .best .best_left .contents_wrap .tab_menu li .active img {display: none;}
     /* ---------------------------------------------------------------- 2. artist */
     #wrap main .artist {width: calc(100vw - 60px); flex-flow: column nowrap; height: auto;}
     #wrap main .artist .artist_left {}
@@ -143,7 +152,7 @@
     #wrap main .artist .artist_right a img {width: 100%;}
     /* ---------------------------------------------------------------- 3. add_bnr */
     #wrap main .add_bnr_product {
-        background-image: url(../images/product/add_bnr_01_t.jpg);
+        background-image: url(../images/product/add_bnr_01_m.jpg);
         background-size: cover;
     }
     #wrap main .add_bnr_product .add_contents {
@@ -151,11 +160,17 @@
         position: absolute; left: 60px; top: 50%; transform: translateY(-50%);
     }
     #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
-    /* ---------------------------------------------------4.best */
-    #wrap main .best {padding: 160px 0 160px 60px;}
+    #wrap main .add_bnr_product .add_contents .more_btn p {font-size: 1rem;}
      /* ---------------------------------------------------4.best */
-    #wrap main .best {flex-flow: column nowrap; padding: 160px 0 160px 60px;}
+    #wrap main .best {flex-flow: column nowrap; padding: 120px 30px;}
     #wrap main .best .best_right {width: 100%;}
+    #wrap main .best .best_left .contents_wrap {width: 100%;}
+    #wrap main .best .best_left .contents_wrap .title {text-align: center;}
+    #wrap main .best .best_left .contents_wrap {align-items: center;}
+    #wrap main .best .best_left .contents_wrap .tab_menu {display: flex; align-items: center; width: 100%;}
+    #wrap main .best .best_left .contents_wrap .tab_menu li {width: 100%;}
+    #wrap main .best .best_left .contents_wrap .tab_menu li a {width: 100%; justify-content: center; gap: 10px;}
+    #wrap main .best .best_left .contents_wrap .tab_menu li:nth-child(4) {display: none;}
 }
 
 @media screen and (max-width:800px){
@@ -173,18 +188,30 @@
     #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{top:75%;}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {font-size: 1.50rem;}
+     /* ---------------------------------------------------4.best */
+    #wrap main .best {flex-flow: column nowrap; align-items: center; padding: 80px 15px;}
     
 }
 
 
 /* 모바일 580px 이하 */
 @media screen and (max-width: 580px) {
+    #wrap main .container .contents .contents_wrap .tab_menu li a {width: 100%; font-size: 0.75rem;}
     /* ----------------------------------------------------------- top_bnr */
     #wrap .top_bnr_swiper {position: fixed; top: 0; left: 0; width: 100%; z-index: 999;}
     #wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide a:nth-child(1) {
         font-size: 0.69rem; line-height: auto; 
     }
-    #wrap main {max-width: 440px;}
     #wrap header .header_right .tm_nav {min-width: 300px;}
-    
+    /* ---------------------------------------------------------------- 3. add_bnr */
+    #wrap main .add_bnr_product {
+        background-image: url(../images/product/add_bnr_01_m2.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+    #wrap main .add_bnr_product .add_contents {top:35%; left: 30px;}
+    #wrap main .add_bnr_product .add_contents h1 {font-size: 1.25rem;}
+    #wrap main .add_bnr_product .add_contents .more_btn p {font-size: 1rem;}
+     /* ---------------------------------------------------4.best */
+    #wrap main .best {flex-flow: column nowrap; padding: 80px 15px;}
 }

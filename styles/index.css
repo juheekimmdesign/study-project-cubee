@@ -81,7 +81,7 @@
 
 /* -------------------------------------------------- 3. add bnr 1st */
 #wrap main .add_bnr_product {
-    height: 200px;
+    height: 200px; width: 100vw;
     background-image: url(../images/product/add_bnr_01.png);
     background-position: center;
     background-size: cover;
@@ -105,7 +105,7 @@
 #wrap main .best {
     display: flex; flex-flow: row nowrap;
     padding: 160px 0 160px 80px; 
-    width: 100%; overflow: hidden;
+    width: 100%;
 }
 #wrap main .best .best_left {}
 #wrap main .best .best_left .contents_wrap {

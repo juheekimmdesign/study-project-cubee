@@ -239,15 +239,12 @@ const bestIdleSwiper = new Swiper(bestIdle, {
     breakpoints:{
         1200:{
             slidesPerView: 4,
-            grid: {rows: 1,},
         },
         800:{
             slidesPerView: 2.5,
-            grid: {rows: 1,},
         },
         0:{
             slidesPerView: 2,
-            grid: {rows: 2,},
         },
     },
 })
@@ -264,15 +261,12 @@ const bestNowzSwiper = new Swiper(bestNowz, {
     breakpoints:{
         1200:{
             slidesPerView: 4,
-            grid: {rows: 1,},
         },
         800:{
             slidesPerView: 2.5,
-            grid: {rows: 1,},
         },
         0:{
             slidesPerView: 2,
-            grid: {rows: 2,},
         },
     },
 })
@@ -289,15 +283,12 @@ const bestLightsumSwiper = new Swiper(bestLightsum, {
     breakpoints:{
         1200:{
             slidesPerView: 4,
-            grid: {rows: 1,},
         },
         800:{
             slidesPerView: 2.5,
-            grid: {rows: 1,},
         },
         0:{
             slidesPerView: 2,
-            grid: {rows: 2,},
         },
     },
 })
