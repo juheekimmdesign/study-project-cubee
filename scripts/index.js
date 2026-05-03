@@ -19,6 +19,7 @@ const mdpickIdle = document.querySelector('.mdpick_right .idle_md_swiper');
 const mdpickNowz = document.querySelector('.mdpick_right .nowz_md_swiper');
 const mdpickLightsum = document.querySelector('.mdpick_right .lightsum_md_swiper');
 const mdpickSwiper = document.querySelectorAll('.mdpick_right .mdpick_swiper');
+const eventSwiper = document.querySelector('.contents .event_swiper');
 //===========================================================================tab 선택 변수
 const artistSelect = document.querySelectorAll('.artist_right a img');//artist 상품분류탭(아티스트별) 선택변수
 const artistMoreBtn = document.querySelector('.artist_left .more_btn');//artist 더보기탭 선택변수
@@ -31,7 +32,7 @@ const productMoreTab = document.querySelector('.product_left .more_btn');//produ
 const mdTab = document.querySelectorAll('.mdpick_left .tab_menu li a');//mdpick 상품분류탭(아티스트별) 선택변수
 const mdMoreTab =document.querySelector('.mdpick_left .more_btn');//mdpick 더보기탭 선택변수
 //====================================================================console확인//
-console.log( heroBnr, bestIdle, bestNowz, bestLightsum, best,coming, newslide);
+console.log( heroBnr, bestIdle, bestNowz, bestLightsum, best,coming, newslide,eventSwiper);
 console.log('------------------------------------------');
 console.log( artistSelect[0],artistSelect[1],artistSelect[2], artistMoreBtn, notiBtn);
 console.log('------------------------------------------');
@@ -225,6 +226,7 @@ artistSelect[2].addEventListener('mouseout',function(){
 });
 
 
+
 // best 상품 목록 swiper생성
 const bestIdleSwiper = new Swiper(bestIdle, {
     slidesPerView: 4,
@@ -275,7 +277,23 @@ const bestLightsumSwiper = new Swiper(bestLightsum, {
     },
 })
 
+
 //상품 목록 swiper생성
+const eventinfoSwiper = new Swiper(eventSwiper, {
+    slidesPerView: 3,
+    breakpoints:{
+        1400:{slidesPerView: 3,},
+        1024:{slidesPerView: 1,},
+        0:{slidesPerView: 1,},
+    },
+    loop:true,
+    speed: 1000,
+    autoplay:{
+        delay:2000,
+        pauseOnMouseEnter: true,
+    },
+})
+
 const heroBnrSwiper = new Swiper(heroBnr, {
     loop: true,
     speed: 3000,

@@ -389,9 +389,10 @@
 #wrap main .product .product_right .product_list .list .item_info .info .badge span:last-child {background-color: #1C4797; margin-left: 8px;}
 /* -------------------------------------------------------------------------------------------------------------8.add_bnr_pay */
 #wrap main .add_bnr_pay {
-    height: 200px;
+    height: 200px; width: 100%;
     background-image: url(../images/product/add_bnr_02.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -400,12 +401,14 @@
     position: absolute;
     left: 50%; top: 50%; transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
 }
 #wrap main .add_bnr_pay .add_contents .logo {margin-bottom: 16px;}
 #wrap main .add_bnr_pay .add_contents .logo img {}
 #wrap main .add_bnr_pay .add_contents h1 {
     color: #fff; font-size: 2.50rem; font-weight: 600; margin-bottom: 16px;
 }
+#wrap main .add_bnr_pay .add_contents h1 br {display: none;}
 #wrap main .add_bnr_pay .add_contents p {
     color: rgba(255,255,255,0.6);
     font-weight: 600; font-size: 1.13rem;
@@ -465,51 +468,46 @@
 }
 /* -------------------------------------------------------------------------------------10.event */
 #wrap main .event {width: 100%;}
-#wrap main .event .contents {width: 100%;}
+#wrap main .event .contents {flex: 1;}
 #wrap main .event .contents .title {
     padding: 0 80px 80px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: end;
+    margin:0;
 }
 #wrap main .event .contents .title .title_left h1 {}
 #wrap main .event .contents .title .title_left p {}
 #wrap main .event .contents .add_btn {}
 #wrap main .event .contents .add_btn img {}
-#wrap main .event .contents .event_list {
-    display: flex; flex-flow: row nowrap;
-    
+#wrap main .event .contents .event_swiper {
+    display: flex; flex-flow: row nowrap; height: 960px; width: 100%;
 }
-#wrap main .event .contents .event_list li {
-    background-size: cover;
-    width: 100%; height: 960px;
-    text-align: center;
-    }
-#wrap main .event .contents .event_list li > a {
-    display: inline-block;
-    padding-top: 150px;
-}
-#wrap main .event .contents .event_list .list1 {background-image: url(../images/product/event_2.jpg);}
-#wrap main .event .contents .event_list .list2 {background-image: url(../images/product/event_1.jpg);}
-#wrap main .event .contents .event_list .list3 {background-image: url(../images/product/event_3.jpg);}
-#wrap main .event .contents .event_list .list2 > a * {color: #fff;}
-#wrap main .event .contents .event_list li a p {}
-#wrap main .event .contents .event_list li a img {}
-#wrap main .event .contents .event_list .list3 a > img {width: 200px; margin: 16px 0;}
-#wrap main .event .contents .event_list li a h1 {font-size: 2.50rem; font-weight: 600; margin-bottom: 20px;}
-#wrap main .event .contents .event_list li a .more_btn {
+#wrap main .event .contents .event_swiper swiper-wrapper {}
+#wrap main .event .contents .event_swiper swiper-wrapper > a {}
+#wrap main .event .contents .event_swiper .slide1 {background-image: url(../images/product/event_2.jpg);}
+#wrap main .event .contents .event_swiper .slide2 {background-image: url(../images/product/event_1.jpg);}
+#wrap main .event .contents .event_swiper .slide3 {background-image: url(../images/product/event_3.jpg);}
+#wrap main .event .contents .event_swiper .slide2 > a * {color: #fff;}
+#wrap main .event .contents .event_swiper .swiper-slide {background-repeat: no-repeat; background-size: cover;text-align: center;padding-top: 80px;} 
+#wrap main .event .contents .event_swiper .swiper-slide a { }
+#wrap main .event .contents .event_swiper .swiper-slide a p {}
+#wrap main .event .contents .event_swiper .swiper-slide a img {}
+#wrap main .event .contents .event_swiper .slide3 a > img {width: 200px; margin: 16px 0;}
+#wrap main .event .contents .event_swiper .swiper-slide a h1 {font-size: 2.50rem; font-weight: 600; margin-bottom: 20px;}
+#wrap main .event .contents .event_swiper .swiper-slide a .more_btn {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
     border: 1px solid #1e1e1e; padding: 10px;
     width: 120px; height: 40px; margin: 0 auto;
 }
-#wrap main .event .contents .event_list li:nth-child(even) a .more_btn {border: 1px solid #fff;}
-#wrap main .event .contents .event_list li a .more_btn span {line-height: 40px;}
-#wrap main .event .contents .event_list li a .more_btn img {}
+#wrap main .event .contents .event_swiper .slide2 a .more_btn {border: 1px solid #fff;}
+#wrap main .event .contents .event_swiper .swiper-slide a .more_btn span {line-height: 40px;}
+#wrap main .event .contents .event_swiper .swiper-slide a .more_btn img {}
 /* -------------------------------------------------------------------------------------------footer */
 #wrap footer {
     padding: 80px; background-color: #1e1e1e;
     display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: start;
-    position: relative;
+    position: relative; width: 100vw;
 }
 #wrap footer * {color: #fff;}
 #wrap footer .footer_left {}

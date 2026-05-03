@@ -93,8 +93,11 @@
     }
     #wrap main .coming_container .coming_right {gap: 40px; width: 90vw;}
     /* -------------------------------------------------------------------------------------------------------------8.add_bnr_pay */
+    #wrap main .add_bnr_pay .add_contents h1 {font-size: 2rem;}
+    /* -------------------------------------------------------------------------------------------------------------- 9. md pick */
     #wrap main .mdpick .mdpick_left .contents_wrap {flex:0 0 320px;}
     
+
 }
 
 /* 반응형 1200이하 일 때, ============================================== */
@@ -137,9 +140,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-}
+    }
+    
+    /* -------------------------------------------------------------------------------------------------------------8.add_bnr_pay */
+    #wrap main .add_bnr_pay {background-image: url(../images/product/add_bnr_02_t.jpg);}
+    #wrap main .add_bnr_pay .add_contents h1 {font-size: 1.38rem;}
+    #wrap main .add_bnr_pay .add_contents > p {font-size: 1rem;}
+    /* -------------------------------------------------------------------------- 9. md pick */
+    #wrap main .mdpick .mdpick_left .contents_wrap {flex: 1; justify-content: start;}
     
 }
+    
 /* 반응형 1024이하 일 때, ============================================== */
 @media screen and (max-width: 1024px){
     #wrap header #gnb {display: none;}
@@ -160,7 +171,7 @@
     #wrap main .container .contents .contents_wrap .tab_menu li a img {display: none;}
     #wrap main .best .best_left .contents_wrap .tab_menu li .active img {display: none;}
     /* ----------------------------------------------------------------============================================================== 2. artist */
-    #wrap main .artist {width: calc(100vw - 60px); flex-flow: column nowrap; height: auto;}
+    #wrap main .artist {width: calc(100vw - 60px); flex-flow: column nowrap; height: auto; gap: 80px;}
     #wrap main .artist .artist_left {}
     #wrap main .artist .artist_left .title {text-align: center;}
     #wrap main .artist .artist_left .more_btn a {}
@@ -184,7 +195,7 @@
     #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
     #wrap main .add_bnr_product .add_contents .more_btn p {font-size: 1rem;}
      /* ---------------------------------------------------------------------------------------------------------------------- 4.best */
-    #wrap main .best {flex-flow: column nowrap; padding: 120px 30px;}
+    #wrap main .best {flex-flow: column nowrap; padding: 120px 30px; gap: 20px;}
     #wrap main .best .best_right {width: 100%;}
     #wrap main .best .best_left .contents_wrap {width: 100%; align-items: center;}
     #wrap main .best .best_left .contents_wrap .title {text-align: center;}
@@ -193,7 +204,7 @@
     #wrap main .best .best_left .contents_wrap .tab_menu li a {width: 100%; justify-content: center; gap: 10px;}
     #wrap main .best .best_left .contents_wrap .tab_menu li:nth-child(4) {display: none;}
     /* --------------------------------------------------------------------------------------------------------------------------- 5. comingsoon */
-    #wrap main .container {gap: 80px;}
+    #wrap main .coming_container {gap: 80px;}
     #wrap main .coming_container .coming_right .coming_wrap .prev {left: 2%;}
     #wrap main .coming_container .coming_right .coming_wrap .next {right: 2%;}
     #wrap main .coming_container .coming_right .coming_wrap .page_scroll {width: 50vw;}
@@ -205,7 +216,7 @@
     #wrap main .new_container .contents .new_wrap .page_scroll {width: 50vw;}
     #wrap main .new_container .contents .new_wrap .page_scroll .scroll {width: 44vw;}
     /* ------------------------------------------------------------------------------------------------------------------------- 7.product */
-    #wrap main .product {flex-flow: column nowrap; padding: 80px 30px;}
+    #wrap main .product {flex-flow: column nowrap; padding: 80px 30px; gap: 20px;}
     #wrap main .product .product_left .contents_wrap {gap: 0; width: 100%;}
     #wrap main .product .product_left .contents_wrap .title {text-align: center;}
     #wrap main .product .product_left .contents_wrap .tab_menu {display: flex; flex-flow: row nowrap; width: 100%;}
@@ -217,7 +228,7 @@
     #wrap main .product .contents_more .contents_wrap {flex: auto; align-items: center;}
     #wrap main .product .contents_more .more_btn {display: none;}
     /* -------------------------------------------------------------------------------------------------------------8.add_bnr_pay */
-    #wrap main .mdpick {flex-flow: column nowrap; padding: 120px 30px;}
+    #wrap main .mdpick {flex-flow: column nowrap; padding: 120px 30px; gap: 20px;}
     #wrap main .mdpick .mdpick_right {width: 100%;}
     #wrap main .mdpick .mdpick_left .contents_wrap  {width: 100%; align-items: center;}
     #wrap main .mdpick .mdpick_left .contents_wrap .title {text-align: center;}
@@ -225,6 +236,26 @@
     #wrap main .mdpick .mdpick_left .contents_wrap .tab_menu li {width: 100%;}
     #wrap main .mdpick .mdpick_left .contents_wrap .tab_menu li a {width: 100%; justify-content: center; gap: 10px;}
     #wrap main .mdpick .mdpick_left .more_btn {display: none;}
+    /* -------------------------------------------------------------------------------------10.event */
+
+    #wrap main .event .contents .title {flex-flow: column nowrap; align-items: center; gap: 40px; padding: 0 80px 40px;}
+    #wrap main .event .contents .title .title_left {text-align: center;}
+    #wrap main .event .contents .event_swiper {height: 90vh;}
+    #wrap main .event .contents .event_swiper .swiper-slide {background-position: center;}
+    #wrap main .event .contents .event_swiper .swiper-slide a p {font-size: 0.88rem;}
+    #wrap main .event .contents .event_swiper .swiper-slide a > img {width: 40%;}
+    #wrap main .event .contents .event_swiper .swiper-slide a h1 {font-size: 1.25rem;}
+    #wrap main .event .contents .event_swiper .swiper-slide a .more_btn span {font-size: 0.88rem;}
+    /* ----------------------------------------------------------------------------------------------------------------10. footer */
+    #wrap footer { padding: 80px 30px; gap: 80px;}
+    #wrap footer .footer_left .fnb {display: flex; flex-flow: row wrap; gap: 20px;}
+    #wrap footer .footer_left .fnb a {font-size: 0.88rem; margin: 0;}
+    #wrap footer .footer_left .brand_info p {font-size: 0.75rem;}
+    #wrap footer .footer_left .brand_info address {font-size: 0.75rem;}
+    #wrap footer .footer_right .family_site > a {font-size: 0.75rem;}
+    #wrap footer .footer_right .logo {width: 20%; bottom: 80px; right: 30px;}
+
+
 }
 /* 반응형 800px이하 일 때, ============================================== */
 @media screen and (max-width:800px){
@@ -252,6 +283,15 @@
     /* ---------------------------------------------------------------------------------------------------------------------------------- 6. new */
     #wrap main .new_container {padding: 80px 15px;}
     #wrap main .new_container .contents .new_wrap .page_scroll .scroll {width: 40vw;}
+    /* -------------------------------------------------------------------------------------------------------------8.add_bnr_pay */
+    #wrap main .add_bnr_pay {background-image: url(../images/product/add_bnr_02_m.jpg);}
+    /* ---------------------------------------------------------------------------------------------------------- 10.footer */
+    #wrap footer { flex-flow: column nowrap; padding: 40px 15px;}
+    #wrap footer .footer_left .fnb a {font-size: 0.69rem;}
+    #wrap footer .footer_left .brand_info p {font-size: 0.69rem;}
+    #wrap footer .footer_left .brand_info address {font-size: 0.69rem;}
+    #wrap footer .footer_right .family_site > a {font-size: 0.69rem;}
+    #wrap footer .footer_right .logo {bottom: 40px; right: 15px;}
 }
 
 
@@ -274,4 +314,9 @@
     #wrap main .add_bnr_product .add_contents .more_btn p {font-size: 1rem;}
      /* ------------------------------------------------------------------------------------------------------------------------------ 4.best */
     #wrap main .best {flex-flow: column nowrap; padding: 80px 15px;}
+    /* -------------------------------------------------------------------------------------------------------------8.add_bnr_pay */
+    #wrap main .add_bnr_pay .add_contents h1 {line-height: 30px;}
+    #wrap main .add_bnr_pay .add_contents h1 br {display: block; }
+    #wrap main .add_bnr_pay .add_contents p {font-size: 0.88rem; font-weight: 500;}
+    
 }
