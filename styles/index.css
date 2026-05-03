@@ -350,7 +350,7 @@
 #wrap main .product .product_right .product_list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 40px 20px ;
 }
 #wrap main .product .product_right .product_list .list {}
 #wrap main .product .product_right .product_list .list1 {}
@@ -361,11 +361,11 @@
 #wrap main .product .product_right .product_list .list6 {}
 #wrap main .product .product_right .product_list .list7 {}
 #wrap main .product .product_right .product_list .list8 {}
-#wrap main .product .product_right .product_list .list .item {}
-#wrap main .product .product_right .product_list .list .item .item_img {
+#wrap main .product .product_right .product_list .list .item_list{margin-bottom: 20px;}
+#wrap main .product .product_right .product_list .list .item_list .item_img {
     display: block;
     width: 100%; position: relative;
-    margin-bottom: 20px; background-size: cover;
+    background-size: cover;
 }
 #wrap main .product .product_right .product_list .list .item_list .item_img img {width: 100%}
 #wrap main .product .product_right .product_list .list .item_list .like {
